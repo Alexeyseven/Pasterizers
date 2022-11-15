@@ -1,0 +1,45 @@
+{% load static %}
+<nav class="navbar navbar-light" style="background-color: lightskyblue">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'root:index' %}">
+      <img src="{% static 'img/logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+      <span style="color:red">control</span>
+    </a>
+    <ul class="nav nav-pills">
+      {% with request.resolver_match.view_name as view %}
+        <li class="nav-item"> 
+          <a class="nav-link {% if view == 'root:help' %}active{% endif %}" href="{% url 'root:help' %}">Справка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if view == 'root:contacts' %}active{% endif %}" href="{% url 'root:contacts' %}">Контакты</a>
+        </li>
+      {% endwith %}
+    </ul>  
+  </div>
+</nav>  
+<nav class="navbar navbar-light" style="background-color: LightGrey">
+  <div class="container">
+    <ul class="nav nav-pills">
+      {% with request.resolver_match.view_name as view %}
+        <li class="nav-item"> 
+          <a class="nav-link {% if view == 'root:pet4' %}active{% endif %}" href="{% url 'root:pet4' %}">PET-4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if view == 'root:glass6' %}active{% endif %}" href="{% url 'root:glass6' %}">GLASS-6</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if view == 'root:can1' %}active{% endif %}" href="{% url 'root:can1' %}">CAN-1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if view == 'root:pet2' %}active{% endif %}" href="{% url 'root:pet2' %}">PET-2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if view == 'root:petkeg' %}active{% endif %}" href="{% url 'root:petkeg' %}">PET-KEG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if view == 'root:keg' %}active{% endif %}" href="{% url 'root:keg' %}">KEG</a>
+        </li>
+      {% endwith %}
+    </ul>
+  </div>
+</nav>  

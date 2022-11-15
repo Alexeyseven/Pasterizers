@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  Пастеризаторы
+{% endblock %}
+{% block content %}
+    <div class="container py-5">
+      <h3>Сбор технологических данных доступных установок для пастеризации</h3>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">
+            <div class="p-3 mb-2 bg-secondary text-white">PET-4</div>
+            <p1>Производитель:</p1>
+            <p>
+              APV gmbh
+            </p>
+          </th>
+          <td>
+            <img src="{% static 'img/01.jpg' %}" width="300" height="300" class="d-inline-block align-top" alt="">
+          </td>
+          <td>
+            <p><strong>Параметры, отображаемые на графике:</strong></p>
+            <div class="p-3 mb-2 bg-secondary text-white">- температура в камере пастеризации</div>
+            <div class="p-3 mb-2 bg-info text-black">- давление в камере пастеризации</div>
+            <div class="p-3 mb-2 bg-secondary text-white">- температура охлаждения</div>
+            <div class="p-3 mb-2 bg-info text-black">- коеффициент пастеризации</div>
+            <div class="p-3 mb-2 bg-secondary text-white">- показания кислородомера</div>
+            <div class="p-3 mb-2 bg-info text-black">- поток пастеризатора</div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <div class="p-3 mb-2 bg-secondary text-white">GLASS-6</div>
+            <p1>Производитель:</p1>
+            <p>
+              APV gmbh
+            </p>
+          </th>
+          <td>
+            <img src="{% static 'img/02.jpg' %}" width="300" height="300" class="d-inline-block align-top" alt="">
+          </td>  
+          <td>
+            <p><strong>Параметры, отображаемые на графике:</strong></p>
+            <div class="p-3 mb-2 bg-secondary text-white">- коеффициент пастеризации</div>
+            <div class="p-3 mb-2 bg-info text-black">- поток пастеризатора</div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <div class="p-3 mb-2 bg-secondary text-white">CAN-1</div>
+            <p1>Производитель:</p1>
+            <p>
+              APV gmbh
+            </p>
+          </th>
+          <td>
+            <img src="{% static 'img/03.jpg' %}" width="300" height="300" class="d-inline-block align-top" alt="">
+          </td>
+          <td>
+            <p><strong>Параметры, отображаемые на графике:</strong></p>
+            <div class="p-3 mb-2 bg-secondary text-white">- показания кислородомера</div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <div class="p-3 mb-2 bg-secondary text-white">KEG</div>
+            <p1>Производитель:</p1>
+            <p>
+              APV gmbh
+            </p>
+          </th>
+          <td>
+            <img src="{% static 'img/04.jpg' %}" width="300" height="300" class="d-inline-block align-top" alt="">
+          </td>
+          <td>
+            <p><strong>Параметры, отображаемые на графике:</strong></p>
+            <div class="p-3 mb-2 bg-secondary text-white">- температура в камере пастеризации</div>
+            <div class="p-3 mb-2 bg-info text-black">- давление в камере пастеризации</div>
+            <div class="p-3 mb-2 bg-secondary text-white">- температура охлаждения</div>
+            <div class="p-3 mb-2 bg-info text-black">- коеффициент пастеризации</div>
+            <div class="p-3 mb-2 bg-secondary text-white">- показания кислородомера</div>
+            <div class="p-3 mb-2 bg-info text-black">- поток пастеризатора</div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <div class="p-3 mb-2 bg-secondary text-white">PET-2</div>
+            <p1>Производитель:</p1>
+            <p>
+              APV gmbh
+            </p>
+          </th>
+          <td>
+            <img src="{% static 'img/05.jpg' %}" width="300" height="300" class="d-inline-block align-top" alt="">
+          </td>
+          <td>
+            <p><strong>Параметры, отображаемые на графике:</strong></p>
+            <div class="p-3 mb-2 bg-secondary text-white">- температура в камере пастеризации</div>
+            <div class="p-3 mb-2 bg-info text-black">- давление в камере пастеризации</div>
+            <div class="p-3 mb-2 bg-secondary text-white">- температура охлаждения</div>
+            <div class="p-3 mb-2 bg-info text-black">- коеффициент пастеризации</div>
+            <div class="p-3 mb-2 bg-secondary text-white">- показания кислородомера</div>
+            <div class="p-3 mb-2 bg-info text-black">- поток пастеризатора</div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <div class="p-3 mb-2 bg-secondary text-white">PET-KEG</div>
+            <p1>Производитель:</p1>
+            <p>
+              APV gmbh
+            </p>
+          </th>
+          <td>
+            <img src="{% static 'img/06.jpg' %}" width="300" height="300" class="d-inline-block align-top" alt="">
+          </td>
+          <td>
+            <p><strong>Параметры, отображаемые на графике:</strong></p>
+            <div class="p-3 mb-2 bg-secondary text-white">- температура в камере пастеризации</div>
+            <div class="p-3 mb-2 bg-info text-black">- давление в камере пастеризации</div>
+            <div class="p-3 mb-2 bg-secondary text-white">- температура охлаждения</div>
+            <div class="p-3 mb-2 bg-info text-black">- коеффициент пастеризации</div>
+            <div class="p-3 mb-2 bg-secondary text-white">- показания кислородомера</div>
+            <div class="p-3 mb-2 bg-info text-black">- поток пастеризатора</div>
+          </td>
+        </tr>
+      </tbody>
+    </table> 
+{% endblock %}
