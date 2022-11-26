@@ -1,0 +1,28 @@
+{% load static %}
+<form action="" method="POST">
+  {% csrf_token %}
+  <div class="alert alert-light">
+    <p>Выберите дату</p>
+    {{ form.day }}
+  </div>
+  <div class="alert alert-dark">
+    <p>Выберите контролируемые параметры</p>
+    {{ form.parameters }}
+  </div>
+  <div class="alert alert-dark">
+    <p>Выберите время</p>
+    <table>
+      <tr>
+        <td>Час от</td>
+        <td>{{ form.hour_from }}</td>
+      </tr>  
+      <tr>  
+        <td>Час до</td>
+        <td>{{ form.hour_to }}</td>
+      </tr>
+    </table>  
+  </div>
+  <button class="btn btn-secondary" type="submit" name="submit" value="Submit">Построить график</button>
+  {% if submitbutton == 'Submit' %}
+    <img src="{% static 'figures/figure.png' %}" width="1200" height="500" class="d-inline-block align-top" alt="">
+  {% endif %}

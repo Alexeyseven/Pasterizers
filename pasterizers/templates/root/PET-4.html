@@ -1,21 +1,7 @@
 {% extends "base.html" %}
-{% load static %}
 {% block title %}
   Пастеризаторы
 {% endblock %}
 {% block content %}
-  <form action="" method="POST">
-    {% csrf_token %}
-    <div class="alert alert-light">
-      <p>Выберите дату</p>
-      {{ form.day }}
-    </div>
-    <div class="alert alert-dark">
-      <p>Выберите контролируемые параметры</p>
-      {{ form.parameters }}
-    </div>
-    <button class="btn btn-secondary" type="submit" name="submit" value="Submit">Построить график</button>
-    {% if submitbutton == 'Submit' %}
-      <h3>{{ result }}</h3>
-    {% endif %}
+  {% include "includes/plot_figure.html" %}
 {% endblock %}
